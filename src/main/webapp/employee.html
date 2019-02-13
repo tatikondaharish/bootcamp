@@ -12,9 +12,9 @@ function callEmployee() {
 	var department = document.getElementById("department").value;
 	// Returns successful data submission message when the entered information is stored in database.
 	var dataString = {
-			firstname : $("#firstname").val(),
-			lastname : $("#lastname").val(),
-			emailid : $("#emailid").val(),
+			firstName : $("#firstname").val(),
+			lastName : $("#lastname").val(),
+			emailId : $("#emailid").val(),
 			department : $("#department").val()
 	}
 		
@@ -27,15 +27,15 @@ function callEmployee() {
 	$.ajax({
 		type: "POST",
 		headers: { 
-        	'Accept': 'application/json',
-        	'Content-Type': 'application/json' 
+        		'Accept': 'application/json',
+        		'Content-Type': 'application/json' 
    		 },
 		url: "/employee-app/app/employee",
 		data: JSON.stringify(dataString),
 		dataType: 'json',
 		cache: false,
-		success: function(html) {
-			alert(html);
+		success: function(data) {
+			alert(data);
 		}
 	});
 	
