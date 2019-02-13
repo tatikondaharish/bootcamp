@@ -2,6 +2,7 @@ package com.harish.springpp.simple_app.mvc.entity;
 
 public class EmployeeDetails {
 
+	
 	public String firstName;
 	public String lastName;
 	public String emailId;
