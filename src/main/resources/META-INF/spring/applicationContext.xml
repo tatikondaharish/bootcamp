@@ -10,5 +10,8 @@
  
    <mvc:annotation-driven/>
    <context:component-scan base-package="com.harish.springpp.simple_app.mvc"/>
+   <context:component-scan base-package="com.harish.springpp.simple_app.dao.impl"/>
+   <context:component-scan base-package="com.harish.springpp.simple_app.dao.entity"/>
+   <context:component-scan base-package="com.harish.springpp.simple_app.service.impl"/>
  
 </beans>

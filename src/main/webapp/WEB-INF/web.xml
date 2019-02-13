@@ -8,7 +8,8 @@
   
   <context-param>
 	<param-name>contextConfigLocation</param-name>
-	<param-value>classpath:/META-INF/spring/applicationContext.xml</param-value>
+	<param-value>classpath:/META-INF/spring/applicationContext.xml,
+	             classpath:/META-INF/spring/hibernate.cfg-servlet.xml</param-value>
   </context-param>
   
   <listener>
